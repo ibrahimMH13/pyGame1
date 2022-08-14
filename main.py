@@ -1,6 +1,6 @@
 from deck import Deck
 from player import Player
-
+from  hand import Hand
 '''
 #this just test each function
 new_deck = Deck()
@@ -48,6 +48,17 @@ new_deck.shuffle_card()
 new_deck.shuffle_card()
 
 # divide the cards for players
+test_hand = Hand()
+test_hand.add_card(new_deck.deal_on())
+test_hand.add_card(new_deck.deal_on())
+test_hand.add_card(new_deck.deal_on())
+print(test_hand.value)
+print(test_hand.aces)
+test_hand.adjust_ace()
+print(test_hand.value)
+
+'''
+
 for x in range(26):
     player_one.add_cards(new_deck.deal_on())
     player_two.add_cards(new_deck.deal_on())
@@ -102,3 +113,4 @@ while game_one:
                 for r in range(5):
                     player_one.drop_card()
                     player_two.drop_card()
+'''
