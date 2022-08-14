@@ -1,4 +1,4 @@
-def take_bit(self, chips):
+def take_bit(chips):
     while True:
 
         try:
