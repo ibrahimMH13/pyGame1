@@ -1,9 +1,5 @@
 from deck import Deck
 from player import Player
-from hand import Hand
-from chip import Chips
-from common import take_bit
-
 '''
 #this just test each function
 new_deck = Deck()
@@ -51,11 +47,6 @@ new_deck.shuffle_card()
 new_deck.shuffle_card()
 
 # divide the cards for players
-test_hand = Hand()
-test_hand.add_card(new_deck.deal_on())
-test_hand.add_card(new_deck.deal_on())
-test_hand.add_card(new_deck.deal_on())
-
 for x in range(26):
     player_one.add_cards(new_deck.deal_on())
     player_two.add_cards(new_deck.deal_on())
